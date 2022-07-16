@@ -21,6 +21,7 @@
 .sub-container {
     height: 100%;
     width: 30%;
+     min-width: 250px;
     padding: 1%;
     transition: width 1s, border-radius 1s, box-shadow 1s;
 }
