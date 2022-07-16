@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML 5 Boilerplate</title>
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@5.8.55/css/materialdesignicons.min.css"> -->
+    <link rel="stylesheet" href="style.css">
+    <script src="vue.global.js" defer></script>
+    <script src="app.js" defer></script>
+</head>
+
+<body>
+    <div id="app">
+        <!-- center card holder -->
+        <div class="parent-container">
+            <div class="container">
+                <div class="sub-container sub-container-first" ref="firstContainer" @mouseover="containerHover('first')" @mouseout="containerNormal()">
+                    <div class="image-holder">
+                        <!-- <div class="image-container"> -->
+                        <img class="image-adjust" alt="Restaurant Card" src="https://b.zmtcdn.com/data/pictures/3/19241443/06753e3d0a4bf12acb673af12acd47d3_o2_featured_v2.jpg?output-format=webp" loading="lazy">
+                        <!-- </div> -->
+                        <div class="promoted">
+                            <p>promoted</p>
+                        </div>
+                        <div class="discount">
+                            <h4>20% OFF</h4>
+                        </div>
+                        <div class="distance">
+                            <h4>26 min</h4>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="name-rating">
+                            <b>Shri Ganesh Nashta Centre</b>
+                            <div>
+                                <span>4.0</span>
+                                <b-icon icon="account" size="is-small">
+                                </b-icon>
+                            </div>
+                        </div>
+                        <div class="food-pricing">
+                            <p>Biryani, North Indian</p>
+                            <span>₹200 for one</span>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="trust">
+                        <div class="trust-img-first">
+                            <img class="first-img" alt="image" src="https://b.zmtcdn.com/data/o2_assets/4bf016f32f05d26242cea342f30d47a31595763089.png?output-format=webp" loading="lazy">
+                        </div>
+
+                        <p class="trust-text">3000+ orders placed from here recently</p>
+
+                        <div class="trust-img-second">
+                            <img class="second-img" alt="image" src="https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png?output-format=webp" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+                <div class="sub-container" ref="secondContainer" @mouseover="containerHover('second')" @mouseout="containerNormal()">
+                    <div class="image-holder">
+                        <!-- <div class="image-container"> -->
+                        <img class="image-adjust" alt="Restaurant Card" src="https://b.zmtcdn.com/data/pictures/2/19671712/0b7456f2c741e820b6d6dde5257b9477_o2_featured_v2.jpg?output-format=webp" loading="lazy">
+                        <!-- </div> -->
+                        <div class="promoted">
+                            <p>promoted</p>
+                        </div>
+                        <div class="discount">
+                            <h4>20% OFF</h4>
+                        </div>
+                        <div class="distance">
+                            <h4>26 min</h4>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="name-rating">
+                            <b>Shri Ganesh Nashta Centre</b>
+                            <div>
+                                <span>4.0</span>
+                                <b-icon icon="account" size="is-small">
+                                </b-icon>
+                            </div>
+                        </div>
+                        <div class="food-pricing">
+                            <p>Biryani, North Indian</p>
+                            <span>₹200 for one</span>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="trust">
+                        <div class="trust-img-first">
+                            <img class="first-img" alt="image" src="https://b.zmtcdn.com/data/o2_assets/4bf016f32f05d26242cea342f30d47a31595763089.png?output-format=webp" loading="lazy">
+                        </div>
+
+                        <p class="trust-text">3000+ orders placed from here recently</p>
+
+                        <div class="trust-img-second">
+                            <img class="second-img" alt="image" src="https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png?output-format=webp" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+                <div class="sub-container" ref="thirdContainer" @mouseover="containerHover('third')" @mouseout="containerNormal()">
+                    <div class="image-holder">
+                        <!-- <div class="image-container"> -->
+                        <img class="image-adjust" alt="Restaurant Card" src="https://b.zmtcdn.com/data/pictures/1/19914891/45ddbf40173a4a0a7afc91cc4d84c64b_o2_featured_v2.jpg?output-format=webp" loading="lazy">
+                        <!-- </div> -->
+                        <div class="promoted">
+                            <p>promoted</p>
+                        </div>
+                        <div class="discount">
+                            <h4>20% OFF</h4>
+                        </div>
+                        <div class="distance">
+                            <h4>26 min</h4>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="name-rating">
+                            <b>Shri Ganesh Nashta Centre</b>
+                            <div>
+                                <span>4.0</span>
+                                <b-icon icon="account" size="is-small">
+                                </b-icon>
+                            </div>
+                        </div>
+                        <div class="food-pricing">
+                            <p>Biryani, North Indian</p>
+                            <span>₹200 for one</span>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="trust">
+                        <div class="trust-img-first">
+                            <img class="first-img" alt="image" src="https://b.zmtcdn.com/data/o2_assets/4bf016f32f05d26242cea342f30d47a31595763089.png?output-format=webp" loading="lazy">
+                        </div>
+
+                        <p class="trust-text">3000+ orders placed from here recently</p>
+
+                        <div class="trust-img-second">
+                            <img class="second-img" alt="image" src="https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png?output-format=webp" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

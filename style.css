@@ -1,0 +1,142 @@
+* {
+    width: 100hv;
+    margin: 0px;
+    padding: 0px;
+}
+
+.parent-container {
+    width: 75%;
+    margin: 0 auto;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    /* gap: 1%; */
+    justify-content: space-evenly;
+    width: 100%;
+    height: 400px;
+}
+
+.sub-container {
+    height: 100%;
+    width: 30%;
+    padding: 1%;
+    transition: width 1s, border-radius 1s, box-shadow 1s;
+}
+
+.image-holder {
+    height: 70%;
+    width: 100%;
+    position: relative;
+}
+
+.image-adjust {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 2%;
+    /* transform: scale(1);
+    transition: transform 1s; */
+}
+
+.promoted,
+.discount,
+.distance {
+    position: absolute;
+}
+
+.promoted {
+    top: 2%;
+    left: 2%;
+    padding: 0% 1%;
+    border-radius: 10%;
+    background-color: rgba(48, 48, 48, 0.814);
+    color: rgb(135, 130, 130);
+}
+
+.discount {
+    bottom: 3%;
+    background-color: blue;
+    color: white;
+    padding-right: 1%;
+}
+
+.distance {
+    border-radius: 15%;
+    padding: 0% 1%;
+    background-color: gray;
+    bottom: 3%;
+    right: 2%;
+}
+
+.name-rating,
+.food-pricing {
+    margin: 2% 0%;
+    display: flex;
+}
+
+.food-pricing>p,
+.name-rating>b {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.name-rating>b {
+    width: 85%;
+    font-size: larger;
+}
+
+.name-rating>div {
+    align-self: center;
+    height: 100%;
+    background-color: green;
+    padding: 0% 3%;
+    border-radius: 10%;
+}
+
+.food-pricing>span {
+    margin-left: auto;
+}
+
+.trust {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.trust-img-second {
+    margin-left: auto;
+    width: 20%;
+}
+
+.trust-img-first {
+    width: 8%;
+    padding: 2%;
+}
+
+.first-img,
+.second-img {
+    object-fit: scale-down;
+    /* width: 50%; */
+}
+
+.trust-img-second img {
+    width: 100%;
+    margin-top: 10%;
+}
+
+.trust-img-first img {
+    width: 100%;
+}
+
+.trust-text {
+    font-size: smaller;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    height: 100%;
+    align-self: center;
+    width: 60%;
+}
